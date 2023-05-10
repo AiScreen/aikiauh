@@ -30,12 +30,12 @@ function install_ui() {
   #echo -e "| Touchscreen GUI:         |                            |"
   #echo -e "|  5) [KlipperScreen]      | Webcam Streamer:           |"
   #echo -e "|                          | 11) [Crowsnest]            |"
-  echo -e "|                                                        |"
-  echo -e "| Touchscreen GUI:                                       |"
-  echo -e "|                                                        |"
-  echo -e "|  1) [AiKlipperScreen]                                  |"
-  echo -e "|  2) [KlipperScreen]                                    |"
-  echo -e "|                                                        |"
+  echo -e "|                                                         |"
+  echo -e "|  Touchscreen GUI:                                       |"
+  echo -e "|                                                         |"
+  echo -e "|  1) [AiKlipperScreen]                                   |"
+  echo -e "|  2) [KlipperScreen]                                     |"
+  echo -e "|                                                         |"
   back_footer
 }
 

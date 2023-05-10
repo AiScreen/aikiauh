@@ -165,7 +165,7 @@ function remove_Aiklipperscreen() {
     rm -f "${KLIPPER_CONFIG}/KlipperScreen.log" && ok_msg "File removed!"
   fi
 
-  print_confirm "KlipperScreen successfully removed!"
+  print_confirm "AiKlipperScreen successfully removed!"
 }
 
 

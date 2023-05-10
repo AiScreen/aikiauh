@@ -38,7 +38,7 @@ function quit_footer() {
 
 function back_footer() {
   hr
-  echo -e "|                       ${green}B) « Back${white}                       |"
+  echo -e "|                       ${green}B) « Back${white}                         |"
   bottom_border
 }
 
