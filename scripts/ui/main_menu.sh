@@ -19,7 +19,7 @@ function main_ui() {
   #top_border
   echo -e "${magenta}/=========================================================\\"
   echo -e "| AiScreen github                                         |"
-  echo -e "| https://github.com                                      |"
+  echo -e "| https://github.com/AiScreen/aikiauh.git                 |"
   echo -e "\=========================================================/${white}"
   top_border
   echo -e "|     $(title_msg "~~~~~~~~~~~~~~~ [ Main Menu ]   ~~~~~~~~~~~~~~~")     |"
@@ -42,8 +42,9 @@ function main_ui() {
 #  echo -e "|                  |  OctoEverywhere: $(print_status "octoeverywhere")|"
 #  echo -e "|                  |                                    |"
 #  echo -e "|  $(print_kiauh_version)|       Octoprint: $(print_status "octoprint")|"
-echo -e "                                                          |"
-  quit_footer 
+  echo -e "|                                                         |"
+  echo -e "|   ${red}[ v0.1 ]${white}                                              |"
+  quit_footer                                                      
 }
 
 function get_kiauh_version() {
