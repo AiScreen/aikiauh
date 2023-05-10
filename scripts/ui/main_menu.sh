@@ -29,9 +29,9 @@ function main_ui() {
 #  echo -e "|                  |            Repo: $(print_klipper_repo)|"
   echo -e "|  1) [Install] |                                         |"
   #echo -e "|  2) [Update]     |       Moonraker: $(print_status "moonraker")|"
-  echo -e "|  2) [Update]  |   AiKlipperScreen: $(get_Aiklipperscreen_status)       |"
-  echo -e "|  3) [Remove]  |   KlipperScreen: $(get_klipperscreen_status)         |"
-  echo -e "|                                                         |"
+  echo -e "|  2) [Update]  |   AiKlipperScreen: $(Aiprint_status)   |"
+  echo -e "|  3) [Remove]  |   KlipperScreen: $(print_status "klipperscreen")     |"
+  echo -e "                                                          |"
 #  echo -e "|  4) [Advanced]   |        Mainsail: $(print_status "mainsail")|"
 #  echo -e "|  5) [Backup]     |        Fluidd: $(print_status "fluidd")|"
 #  echo -e "|                  |          Fluidd: $(print_status "fluidd")|"
@@ -63,7 +63,25 @@ function print_kiauh_version() {
 function print_status() {
   local status component="${1}"
   status=$(get_"${component}"_status)
+  #status=$(get_Aiklipperscreen_status)
+  if [[ ${status} == "Not installed!" ]]; then
+    status="${red}${status}${white}"
+  elif [[ ${status} == "Incomplete!" ]]; then
+    status="${yellow}${status}${white}"
+  elif [[ ${status} == "Not linked!" ]]; then
+    ### "Not linked!" is only required for Moonraker-obico
+    status="${yellow}${status}${white}"
+  else
+    status="${green}${status}${white}"
+  fi
 
+  printf "%-28s" "${status}"
+}
+
+function Aiprint_status() {
+  local status component="${1}"
+  #status=$(get_"${component}"_status)
+  status=$(get_Aiklipperscreen_status)
   if [[ ${status} == "Not installed!" ]]; then
     status="${red}${status}${white}"
   elif [[ ${status} == "Incomplete!" ]]; then
