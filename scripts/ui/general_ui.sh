@@ -54,7 +54,7 @@ function print_header() {
   #echo -e "|     $(title_msg "   Klipper Installation And Update Helper    ")     |"
   #echo -e "|     $(title_msg "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")     |"
   echo -e "|     $(title_msg "~~~~~~~~~~~~~~~~~~  ASIAUH  ~~~~~~~~~~~~~~~~~~")      |"
-  echo -e "|     $(title_msg "   AiScreen Installation And Update Helper ")${red}- Beta -${white} |"
+  echo -e "|     $(title_msg "     ASIAUH Installation And Update Helper ") ${red}- Beta -${white}|"
   echo -e "|     $(title_msg "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")      |"
   
   bottom_border

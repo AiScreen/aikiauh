@@ -18,7 +18,7 @@ function main_ui() {
   #echo -e "\=======================================================/${white}"
   #top_border
   echo -e "${magenta}/=========================================================\\"
-  echo -e "| AiScreen github                                         |"
+  echo -e "| ASIAUH github                                           |"
   echo -e "| https://github.com/AiScreen/aikiauh.git                 |"
   echo -e "\=========================================================/${white}"
   top_border
@@ -29,7 +29,7 @@ function main_ui() {
 #  echo -e "|                  |            Repo: $(print_klipper_repo)|"
   echo -e "|  1) [Install]    |                                      |"
   #echo -e "|  2) [Update]     |       Moonraker: $(print_status "moonraker")|"
-  echo -e "|  2) [Update]     |   AiKlipperScreen: $(get_Aiklipperscreen_status)    |"
+  echo -e "|  2) [Update]     |   AiKlipperScreen: $(get_Aiklipperscreen_status)        |"
   echo -e "|  3) [Remove]     |   KlipperScreen: $(get_klipperscreen_status)      |"
   echo -e "                                                          |"
 #  echo -e "|  4) [Advanced]   |        Mainsail: $(print_status "mainsail")|"
