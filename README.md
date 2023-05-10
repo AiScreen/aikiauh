@@ -4,11 +4,12 @@ AiKlipper Screen installation and update helper.
 
 
 Download:
-'''shell
+
+```shell
 cd ~ && git clone https://github.com/AiScreen/aikiauh.git
-'''
+```
 
 Running command:
-'''shell
+```shell
 ./aikiauh/Aikiauh.sh
-'''
+```
